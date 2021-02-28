@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./styles.css" />
+		<title>User Generator</title>
+	</head>
+	<body>
+		<div id="container">
+			<div id="app">
+				<img
+					:src="picture"
+					:alt="`${firstName} ${lastName}`"
+					:class="`${gender.toLowerCase()}`"
+				/>
+
+				<h1>{{firstName}} {{lastName}}, {{age}}</h1>
+				<h3>{{city}}, {{country}}</h3>
+				<h3>{{email}}</h3>
+				<h3>{{phone}}</h3>
+				<h3>{{gender.toUpperCase()}}</h3>
+
+				<button :class="`${gender.toLowerCase()}`" v-on:click="setUserInfo()">
+					Get Random User
+				</button>
+			</div>
+		</div>
+
+		<!-- scripts -->
+		<script src="https://unpkg.com/vue@3.0.5"></script>
+		<script src="./app.js"></script>
+	</body>
+</html>
