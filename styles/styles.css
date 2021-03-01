@@ -6,7 +6,7 @@
 
 html,
 body {
-	background: url('./background.jpg');
+	background: url('../images/background.jpg');
 	background-attachment: fixed;
 	background-repeat: repeat-x;
 	background-size: cover;
